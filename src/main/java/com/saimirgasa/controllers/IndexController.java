@@ -1,15 +1,24 @@
 package com.saimirgasa.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.saimirgasa.services.RecipeService;
 
 @Controller
 public class IndexController {
 
-    @RequestMapping({"", "/", "/index"})
-    public String getIndexPage() {
+    private final RecipeService recipeService;
 
-        System.out.println("Some message to say...");
+    public IndexController(RecipeService recipeService) {
+        this.recipeService = recipeService;
+    }
+
+    @RequestMapping({"", "/", "/index"})
+    public String getIndexPage(Model model) {
+
+        model.addAttribute("recipes", recipeService.getRecipes());
 
         return "index";
     }
