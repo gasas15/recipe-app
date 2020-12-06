@@ -77,6 +77,7 @@
                         <additionalClasspathElement>${basedir}/target/classes</additionalClasspathElement>
                     </additionalClasspathElements>
                     <parallel>none</parallel>
+                    <argLine>${failsafe.jacoco.args}</argLine>
                 </configuration>
                 <executions>
                     <execution>
@@ -199,22 +200,6 @@
                 <configuration>
                     <argLine>${surefire.jacoco.args}</argLine>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M4</version>
-                <configuration>
-                    <argLine>${failsafe.jacoco.args}</argLine>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
