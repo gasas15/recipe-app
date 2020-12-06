@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.saimirgasa</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>recipe-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>recipe-app</name>
     <description>This is the Recipe application</description>
