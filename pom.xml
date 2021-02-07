@@ -15,7 +15,7 @@
     <description>This is the Recipe application</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
     </properties>
 
     <dependencies>
@@ -220,7 +220,7 @@
                         <configuration>
                             <failOnMissingWebXml>false</failOnMissingWebXml>
                             <outputDirectory>target</outputDirectory>
-                            <warName>RecipeApp</warName>
+                            <warName>recipe-app</warName>
                         </configuration>
                     </plugin>
                 </plugins>
