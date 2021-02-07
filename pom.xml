@@ -220,7 +220,7 @@
                         <configuration>
                             <failOnMissingWebXml>false</failOnMissingWebXml>
                             <outputDirectory>target</outputDirectory>
-                            <warName>ROOT</warName>
+                            <warName>RecipeApp</warName>
                         </configuration>
                     </plugin>
                 </plugins>
